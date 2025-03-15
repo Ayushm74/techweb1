@@ -7,7 +7,7 @@ Website made in react in futuristic style for no existing revolutionary auth tec
 Clone the project
 
 ```bash
-https://github.com/Ayushm74/techweb1
+  git clone https://github.com/Pla9er9/Futuristic-site
 ```
 
 Go to the project directory

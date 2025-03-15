@@ -10,6 +10,7 @@ import Footer from "./components/footer/Footer";
 import Chatbot from "./Chatbot"; // ✅ Chatbot component
 import Tshirt from "./Tshirt"; // ✅ T-shirt component
 import EventTimeline from "./EventTimeline"; // ✅ Event Timeline component
+import GuestSpeakersSchedule from "./GuestSpeakers"; // ✅ Imported correctly
 
 const App = () => {
     const animationUrl = "https://prod.spline.design/eQVHJFKCxwuuXWmE/scene.splinecode"; // ✅ Spline animation URL
@@ -48,6 +49,11 @@ const App = () => {
             <div className="timeline-section">
                 <h1 style={{ textAlign: "center", color: "white" }}>Event Timeline</h1>
                 <EventTimeline />
+            </div>
+
+            {/* ✅ Guest Speakers Section */}
+            <div className="guest-speakers-section">
+                <GuestSpeakersSchedule />
             </div>
 
             {/* ✅ Only One T-Shirt */}

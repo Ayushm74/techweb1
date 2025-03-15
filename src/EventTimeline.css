@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-    background: linear-gradient(135deg, #0a0a0a, #111111);
+    background: #000; /* Deep black background */
     color: white;
     font-family: "Poppins", sans-serif;
 }
@@ -17,9 +17,9 @@ body {
 .timeline {
     position: relative;
     width: 6px;
-    background: rgba(0, 255, 255, 0.4);
+    background: rgba(222, 124, 252, 0.4); /* New color with transparency */
     height: 100%;
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+    box-shadow: 0 0 20px rgba(222, 124, 252, 0.8), 0 0 15px rgba(255, 255, 255, 0.5); /* Purple-Pink Glow */
 }
 
 /* Timeline Event Wrapper */
@@ -30,56 +30,53 @@ body {
     margin: 80px 0; /* Increased spacing */
 }
 
-/* Glowing Circle */
-
-
-/* Square Number Box */
-.timeline-box {
-    width: 70px;  /* Adjust size */
-    height: 70px; /* Keep it square */
-    background: rgba(0, 255, 255, 0.2);
-    border: 3px solid cyan;
-    color: cyan;
+/* Glowing Circle (for numbers) */
+.timeline-circle {
+    width: 50px; /* Adjust size */
+    height: 50px; /* Circular shape */
+    background: rgba(222, 124, 252, 0.2); /* Light purple-pink */
+    border: 3px solid #DE7CFC; /* Soft border */
+    color: white;
     font-weight: bold;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 26px; /* Increased font size */
+    font-size: 22px; /* Adjust font size */
+    border-radius: 50%; /* Make it a circle */
     margin-right: 40px; /* Increased spacing */
-    box-shadow: 0 0 15px cyan, 0 0 30px rgba(0, 255, 255, 0.6);
+    box-shadow: 0 0 10px #DE7CFC, 0 0 20px rgba(255, 255, 255, 0.5);
     transition: transform 0.3s ease-in-out;
 }
-
 
 /* Hover Effect for Circles */
 .timeline-circle:hover {
     transform: scale(1.2);
-    box-shadow: 0 0 20px cyan, 0 0 40px rgba(0, 255, 255, 0.9);
+    box-shadow: 0 0 20px #DE7CFC, 0 0 40px rgba(255, 255, 255, 0.9);
 }
 
 /* Event Card */
 .event-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(222, 124, 252, 0.16); /* Your requested color */
     backdrop-filter: blur(12px);
     padding: 30px; /* Increased padding */
     border-radius: 15px;
     width: 400px; /* Increased width */
     color: white;
-    box-shadow: 0px 6px 15px rgba(0, 255, 255, 0.4);
+    box-shadow: 0px 6px 15px rgba(222, 124, 252, 0.4), 0px 0px 12px rgba(255, 255, 255, 0.5); /* Purple-Pink Glow */
     transition: transform 0.3s ease-in-out;
 }
 
 /* Event Card Hover Effect */
 .event-card:hover {
     transform: translateY(-7px);
-    box-shadow: 0px 6px 25px rgba(0, 255, 255, 0.6);
+    box-shadow: 0px 6px 25px rgba(222, 124, 252, 0.6), 0px 0px 15px rgba(255, 255, 255, 0.7); /* Brighter Glow */
 }
 
 /* Event Date */
 .event-date {
     font-size: 16px; /* Slightly larger */
-    color: cyan;
+    color: #DE7CFC; /* Purple-Pink */
     margin-bottom: 8px;
 }
 
@@ -87,12 +84,13 @@ body {
 .event-title {
     font-size: 26px; /* Increased font size */
     font-weight: bold;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 15px rgba(222, 124, 252, 0.9); /* White-Purple Neon */
 }
 
 /* Event Description */
 .event-desc {
     font-size: 18px; /* Increased font size */
-    color: #ddd;
+    color: white; /* White text */
 }
 
 /* Responsive Adjustments */
@@ -104,10 +102,9 @@ body {
     }
 
     .timeline-circle {
-        width: 60px;
-        height: 60px;
-        font-size: 22px;
-        line-height: 60px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
         margin-bottom: 15px;
     }
 
